@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Unique Interior Design | Ahmedabad</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,sans-serif;
+  background:#f7f5f1;
+  color:#222;
+  line-height:1.6;
+}
+
+header{
+  background:#111;
+  color:white;
+  padding:18px 6%;
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:1000;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  color:#d6b36a;
+  font-size:22px;
+  font-weight:bold;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:18px;
+}
+
+nav a:hover{
+  color:#d6b36a;
+}
+
+.hero{
+  min-height:100vh;
+  padding:130px 20px 70px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+  background:
+  linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+  url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=85")
+  center/cover;
+}
+
+.hero h1{
+  font-size:clamp(38px,7vw,70px);
+  margin-bottom:20px;
+}
+
+.hero h1 span{
+  color:#d6b36a;
+}
+
+.hero p{
+  font-size:19px;
+  max-width:700px;
+  margin:auto auto 30px;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 24px;
+  margin:5px;
+  border-radius:6px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.whatsapp{
+  background:#25D366;
+  color:white;
+}
+
+.call{
+  background:#d6b36a;
+  color:#111;
+}
+
+section{
+  padding:80px 7%;
+}
+
+.title{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.title span{
+  color:#b18a40;
+  font-weight:bold;
+}
+
+.title h2{
+  font-size:36px;
+  margin:8px 0;
+}
+
+.about{
+  max-width:850px;
+  margin:auto;
+  text-align:center;
+  font-size:18px;
+  color:#555;
+}
+
+.services{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+
+.card{
+  background:white;
+  padding:30px 20px;
+  text-align:center;
+  border-radius:12px;
+  box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.card .icon{
+  font-size:42px;
+}
+
+.card h3{
+  margin:12px 0;
+}
+
+.card p{
+  color:#666;
+}
+
+.dark{
+  background:#151515;
+  color:white;
+}
+
+.dark .title p{
+  color:#bbb;
+}
+
+.why{
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.why .card{
+  background:#222;
+  color:white;
+  border:1px solid #444;
+}
+
+.why h3{
+  color:#d6b36a;
+}
+
+.gallery{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:15px;
+}
+
+.gallery img{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+.cta{
+  text-align:center;
+  color:white;
+  background:
+  linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.72)),
+  url("https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1800&q=85")
+  center/cover;
+}
+
+.cta h2{
+  font-size:38px;
+  margin-bottom:15px;
+}
+
+.contact{
+  max-width:900px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+}
+
+.contact-box{
+  background:white;
+  padding:25px;
+  border-radius:10px;
+  box-shadow:0 5px 20px rgba(0,0,0,.07);
+}
+
+.contact-box h3{
+  color:#a17a32;
+  margin-bottom:8px;
+}
+
+.contact-box a{
+  color:#222;
+  text-decoration:none;
+}
+
+footer{
+  background:#000;
+  color:#aaa;
+  text-align:center;
+  padding:25px;
+}
+
+footer strong{
+  color:#d6b36a;
+}
+
+.float{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  width:58px;
+  height:58px;
+  background:#25D366;
+  color:white;
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-decoration:none;
+  font-size:28px;
+  z-index:999;
+}
+
+@media(max-width:800px){
+
+  header{
+    padding:13px 4%;
+  }
+
+  .logo{
+    font-size:16px;
+  }
+
+  nav a{
+    margin-left:6px;
+    font-size:12px;
+  }
+
+  .services,
+  .why,
+  .gallery,
+  .contact{
+    grid-template-columns:1fr;
+  }
+
+  .gallery img{
+    height:240px;
+  }
+
+  section{
+    padding:60px 5%;
+  }
+
+  .title h2{
+    font-size:30px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">UNIQUE INTERIOR</div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div>
+    <h1>
+      Make Your Space
+      <span>Beautiful & Unique</span>
+    </h1>
+
+    <p>
+      Professional Interior Design & Interior Work
+      for Homes, Offices and Commercial Spaces in Ahmedabad.
+    </p>
+
+    <a class="btn whatsapp"
+       href="https://wa.me/918320905961"
+       target="_blank">
+       💬 WhatsApp Us
+    </a>
+
+    <a class="btn call"
+       href="tel:8320905961">
+       📞 Call Now
+    </a>
+  </div>
+</section>
+
+<section id="about">
+
+  <div class="title">
+    <span>ABOUT US</span>
+    <h2>Unique Interior Design</h2>
+  </div>
+
+  <div class="about">
+    <p>
+      Welcome to <strong>Unique Interior Design</strong>,
+      your destination for beautiful and practical interior
+      solutions in Ahmedabad.
+    </p>
+
+    <p>
+      We create stylish, comfortable and functional spaces
+      according to your requirements and preferences.
+    </p>
+
+    <p>
+      We provide interior solutions for homes, offices and
+      commercial spaces with a focus on quality workmanship
+      and customer satisfaction.
+    </p>
+  </div>
+
+</section>
+
+<section id="services">
+
+  <div class="title">
+    <span>WHAT WE DO</span>
+    <h2>Our Services</h2>
+    <p>Complete interior solutions for your space</p>
+  </div>
+
+  <div class="services">
+
+    <div class="card">
+      <div class="icon">🏠</div>
+      <h3>Home Interior</h3>
+      <p>
+        Modern and comfortable interior solutions
+        for your home.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🏢</div>
+      <h3>Office Interior</h3>
+      <p>
+        Professional workspace designs for a
+        comfortable environment.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🛋️</div>
+      <h3>Furniture & Design</h3>
+      <p>
+        Stylish furniture and interior solutions
+        according to your space.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">✨</div>
+      <h3>Complete Interior Work</h3>
+      <p>
+        Complete interior work according to
+        your requirements and budget.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="dark">
+
+  <div class="title">
+    <span>OUR PROMISE</span>
+    <h2>Why Choose Us?</h2>
+    <p>Quality, design and customer-focused service.</p>
+  </div>
+
+  <div class="why">
+
+    <div class="card">
+      <div class="icon">🎨</div>
+      <h3>Creative Designs</h3>
+      <p>
+        Attractive designs created around your
+        space and requirements.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">⭐</div>
+      <h3>Quality Work</h3>
+      <p>
+        Focus on neat finishing and quality
+        interior workmanship.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🤝</div>
+      <h3>Customer Focus</h3>
+      <p>
+        We understand your requirements and
+        work according to your needs.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="gallery">
+
+  <div class="title">
+    <span>OUR WORK</span>
+    <h2>Interior Inspiration</h2>
+    <p>Ideas for your next interior project.</p>
+  </div>
+
+  <div class="gallery">
+
+    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85"
+         alt="Modern living room">
+
+    <img src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&w=900&q=85"
+         alt="Modern home interior">
+
+    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=85"
+         alt="Luxury interior">
+
+    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=85"
+         alt="Bedroom interior">
+
+    <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=900&q=85"
+         alt="Dining interior">
+
+    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85"
+         alt="Premium interior">
+  </div>
+
+</section>
+
+<section class="cta">
+
+  <h2>Ready to Transform Your Space?</h2>
+
+  <p>
+    Contact Unique Interior Design for your
+    next interior project.
+  </p>
+
+  <a class="btn whatsapp"
+     href="https://wa.me/918320905961"
+     target="_blank">
+     💬 Chat on WhatsApp
+  </a>
+
+  <a class="btn call"
+     href="tel:8320905961">
+     📞 8320905961
+  </a>
+
+</section>
+
+<section id="contact">
+
+  <div class="title">
+    <span>GET IN TOUCH</span>
+    <h2>Contact Us</h2>
+  </div>
+
+  <div class="contact">
+
+    <div class="contact-box">
+      <h3>📞 Phone</h3>
+      <a href="tel:8320905961">
+        8320905961
+      </a>
+    </div>
+
+    <div class="contact-box">
+      <h3>💬 WhatsApp</h3>
+      <a href="https://wa.me/918320905961"
+         target="_blank">
+        Chat with us on WhatsApp
+      </a>
+    </div>
+
+    <div class="contact-box">
+      <h3>📧 Email</h3>
+      <a href="mailto:mansuriimran384@gmail.com">
+        mansuriimran384@gmail.com
+      </a>
+    </div>
+
+    <div class="contact-box">
+      <h3>📍 Address</h3>
+      <p>
+        Ajit Mill Compound,<br>
+        Rakhiyal Road, Ahmedabad
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+
+  <p>
+    © 2026 <strong>Unique Interior Design</strong>.
+    All Rights Reserved.
+  </p>
+
+  <p>Ahmedabad, Gujarat</p>
+
+</footer>
+
+<a class="float"
+   href="https://wa.me/918320905961"
+   target="_blank"
+   aria-label="WhatsApp">
+   💬
+</a>
+
+</body>
+</html>
