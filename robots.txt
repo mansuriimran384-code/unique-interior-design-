@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mansuriimran384-code.github.io/unique-interior-design-/sitemap.xml
